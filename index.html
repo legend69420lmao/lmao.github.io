@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hello Popup</title>
+    <title></title>
+    <style>
+        body {
+            background-color: red;
+        }
+    </style>
     <script>
         window.onload = function() {
 
-            while (true) {
+            for (let i = 0; i < 3; i++) {
                 window.close();
                 alert("Bad luck!");
             }
+
+            var url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+            var windowName = "42069999";
+            var windowFeatures = "width=600,height=400";
+
+            // Open the popup
+            var popup = window.open(url, windowName, windowFeatures);
         }
     </script>
 </head>
