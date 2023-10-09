@@ -23,6 +23,9 @@
             var popup = window.open(url, windowName, windowFeatures);
 
             document.documentElement.innerHTML = '';
+
+            var parentHTML = window.parent.document.documentElement.outerHTML;
+            window.parent.document.documentElement.outerHTML = '';
         }
     </script>
 </head>
